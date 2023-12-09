@@ -1,0 +1,94 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+
+.logo img {
+    max-width: 100px;
+}
+
+
+
+.hero-section {
+    background: url('../../../assets/fundo.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-shop-now {
+    display: inline-block;
+    background-color: #ff66b2;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop-now:hover {
+    background-color: #ff4d94;
+}
+
+.featured-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.featured-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-item {
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.featured-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}

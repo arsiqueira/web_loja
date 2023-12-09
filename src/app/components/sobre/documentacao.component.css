@@ -1,0 +1,90 @@
+/* Estilos CSS do componente about */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../../../assets/hearts.svg') repeat-y 0 100%;
+    animation: heartsRain 15s linear infinite;
+}
+
+@keyframes heartsRain {
+    to {
+        transform: translateY(-100%);
+    }
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.hero-section-about {
+    background: url('../../../assets/fundo.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    animation: fadeInUp 1.5s ease;
+}
+
+.story-section,
+.mission-section,
+.values-section,
+.vision-section {
+    background-color: #fff;
+    padding: 50px 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.story-content h2,
+.mission-content h2,
+.values-content h2,
+.vision-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeInUp 1s ease;
+}
+
+.story-content p,
+.mission-content p,
+.values-content p,
+.vision-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+    animation: fadeInUp 1.5s ease;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

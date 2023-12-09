@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Loja Plus Size</title>
+</head>
+<div class="catalog">
+    <div class="catalog-item">
+        <img src="../../../assets/imagem4.jpg" alt="Roupa 1">
+        <div class="item-info">
+            <h2>Roupa Plus Size Floral</h2>
+            <p>Vestido floral plus size, perfeito para diversas ocasiões.</p>
+            <div class="price">R$ 129,99</div>
+            <div class="buy-section">
+                <button class="buy-button" onclick="buyItem('Roupa Plus Size Floral')">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="catalog-item">
+        <img src="../../../assets/imagem5.jpg" alt="Roupa 2">
+        <div class="item-info">
+            <h2>Blusa Casual Plus Size</h2>
+            <p>Blusa casual plus size, confortável e estilosa.</p>
+            <div class="price">R$ 79,99</div>
+            <div class="buy-section">
+                <button class="buy-button" onclick="showMessage()">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-item">
+        <img src="../../../assets/imagem6.jpg" alt="Roupa 3">
+        <div class="item-info">
+            <h2>Calça Jeans Plus Size</h2>
+            <p>Calça jeans plus size, ajuste perfeito e durável.</p>
+            <div class="price">R$ 149,99</div>
+            <div class="buy-section">
+                <button class="buy-button" onclick="showMessage()">Comprar</button>
+            </div>
+        </div>
+    </div> <div class="catalog-item">
+        <img src="../../../assets/imagem1.jpeg" alt="Item em Destaque 1">
+        <div class="item-info">
+            <h2>Conj. Balada</h2>
+            <p>Conjunto perfeito para arrasar na balada! Composto por um cropped de manga única e uma saia franzida, ambos em paetês pretos, esse conjunto plus size é a escolha ideal para brilhar na pista de dança. Garanta um look deslumbrante, cheio de estilo e perfeito para a noite.</p>
+            <div class="price">R$ 239,99</div>
+            <div class="buy-section">
+                <button class="buy-button" onclick="buyItem('Conj. Balada')">Comprar</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="catalog-item">
+        <img src="../../../assets/imagem2.jpeg" alt="Item em Destaque 2">
+        <div class="item-info">
+            <h2>Macaquinho paetê</h2>
+            <p>Macaquinho deslumbrante de paetê branco, com ombro único, perfeito para a virada do ano. Este elegante macaquinho proporciona um visual sofisticado e festivo, ideal para celebrar a chegada do novo ano com muito estilo. O design ombro único adiciona um toque moderno, enquanto o paetê branco traz brilho e glamour à sua festa de Réveillon. Se destaque na contagem regressiva com esse look deslumbrante!</p>
+            <div class="price">R$ 199,99</div>
+            <div class="buy-section">
+                <button class="buy-button" onclick="buyItem('Macaquinho paetê')">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-item">
+        <img src="../../../assets/imagem3.jpeg" alt="Item em Destaque 3">
+        <div class="item-info">
+            <h2>Conjunto Penelope</h2>
+            <p>Conjunto moderno e estiloso, composto por um cropped preto com amarração frontal, realçando o charme, e um shorts saia rosa, adicionando um toque de feminilidade. Perfeito para dias ensolarados e eventos descontraídos, esse conjunto oferece um equilíbrio entre elegância e casualidade. Ideal para quem busca um look cheio de personalidade e conforto.</p>
+            <div class="price">R$ 179,99</div>
+            <div class="buy-section">
+                <button class="buy-button" onclick="buyItem('Conjunto Penelope')">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Adicione mais itens conforme necessário -->
+
+</div>
+
+<script>
+    function buyItem(itemName) {
+        var confirmation = confirm(`Deseja comprar ${itemName}?`);
+        if (confirmation) {
+            alert("Compra realizada com sucesso!");
+        } else {
+            alert("Compra cancelada.");
+        }
+    }
+</script>
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2023 Sua Loja Plus Size. Todos os direitos reservados.</p>
+    </div>
+</footer>

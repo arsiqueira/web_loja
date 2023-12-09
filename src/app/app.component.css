@@ -1,0 +1,88 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background: #000; /* Cor de fundo preta */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  }
+  
+  .logo {
+    max-width: 100px; /* Defina a largura máxima do logo conforme necessário */
+  }
+  
+  .logo img {
+    width: 100%; /* Garante que a imagem do logo ocupe 100% da largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  .list_nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .list_ul li {
+    margin-right: 20px; /* Adiciona espaçamento entre os itens */
+  }
+  
+  .list_ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+  }
+  
+  .list_ul li a {
+    color: #fff; /* Cor do texto branca */
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600; /* Aumenta o peso da fonte para dar mais destaque */
+    padding: 10px; /* Adiciona um preenchimento para tornar os links mais clicáveis */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave na cor de fundo e na cor do texto */
+  }
+  
+  .list_ul li a:hover {
+    background-color: #ff66b2; /* Cor de fundo rosa ao passar o mouse */
+    color: #000; /* Muda a cor do texto para preto ao passar o mouse */
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+  
+    list-style-type: none;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    color: #fff; /* Cor do texto branca por padrão */
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #ff66b2; /* Cor de fundo rosa ao passar o mouse */
+    color: #fff; /* Muda a cor do texto para branco ao passar o mouse */
+}
